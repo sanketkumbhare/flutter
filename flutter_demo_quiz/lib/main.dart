@@ -9,7 +9,23 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('My First app'),
         ),
-        body: Text("My first application in flutter"),
+        body: Column(
+          children: <Widget>[
+            Text("My Question!"),
+            RaisedButton(
+              child: Text("Answer 1"),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text("Answer 2"),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text("Answer 3"),
+              onPressed: null,
+            ),
+          ],
+        ),
       ),
     );
   }
